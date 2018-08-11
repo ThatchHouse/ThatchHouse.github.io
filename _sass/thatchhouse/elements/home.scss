@@ -1,0 +1,58 @@
+$aow: 24rem;
+$aoh: 24rem;
+$atw: 12rem;
+$ath: 28rem;
+.home-intro
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height:100vh;
+
+    &__box {
+        position:relative;
+        display: flex;
+        flex:1;
+        flex-direction: column;
+        justify-content: center;
+
+        /*
+        &::before {
+            position: absolute;
+            display: block;
+            content: '';
+            width: calc(100% + #{$aow});
+            height: calc(100% + #{$aoh});
+            border: 10px solid $red;
+            left: -$aow;
+            top: -$aoh / 2;
+            transform: translate(-2rem, -2rem);
+        }
+        &::after {
+            position: absolute;
+            display: block;
+            content: '';
+            width: calc(100% + #{$atw});
+            height: calc(100% + #{$ath});
+            border: 10px solid $blue;
+            left: -$atw;
+            top: -$ath / 2;
+            transform: translate(+2rem, +2rem);
+        } */
+    }
+    &__content {
+        max-width:340px;
+    }
+    &__first {
+        height: calc(100px + 6rem);
+        img {
+            display:block;
+            margin-left:auto;
+        }
+    }
+    &__last {
+        height: calc(100px + 6rem);
+        margin-bottom:1px solid $grey;
+    }
+}
+
