@@ -5,10 +5,10 @@ $positions: ('top', 'right', 'bottom', 'left');
 @for $i from 1 through length($sizes) {
     @each $position in $positions {
         .margin-#{$position}-#{$i} {
-            margin-#{$position}: nth($sizes, $i);
+            margin-#{$position}: nth($sizes, $i) !important;
         }
         .padding-#{$position}-#{$i} {
-            padding-#{$position}: nth($sizes, $i);
+            padding-#{$position}: nth($sizes, $i) !important;
         }
     }
 }
