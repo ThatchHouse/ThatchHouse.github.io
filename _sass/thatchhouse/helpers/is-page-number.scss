@@ -1,20 +1,27 @@
 .is-page-number {
     position: relative;
     height:0px;
+    top:10px;
+    @include mobile {
+        margin-bottom:6rem;
+        margin-top:6rem;
+    }
     &::before {
         display: block;
-        position: absolute;
         height:2px;
         width: calc(100% - #{$size-1*2});
         height:1px;
         content: '';
         margin:0px auto;
-        bottom:0px;
-        left:$size-1;
         background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 39%, rgba(0,0,0,0) 100%);
         background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 39%,rgba(0,0,0,0) 100%);
         background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,1) 39%,rgba(0,0,0,0) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+        @include tablet {
+            position: absolute;
+            left:$size-1;
+            bottom:0px;
+        }
     }
     > span {
         margin-left:6rem;
@@ -28,5 +35,6 @@
         top:-10px;
         border:1px solid black;
         text-align:center;
+        font-size:10px;
     }
 }

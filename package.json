@@ -4,6 +4,7 @@
   "description": "Thatch House Website Packages",
   "main": "index.js",
   "dependencies": {
+    "aos": "^2.3.3",
     "bulma": "^0.7.1"
   },
   "devDependencies": {},

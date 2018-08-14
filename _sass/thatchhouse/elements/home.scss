@@ -7,8 +7,45 @@ $ath: 28rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height:100vh;
+    @include tablet {
+        min-height:100vh;
+    }
 
+    &__first {
+        img {
+            display:block;
+            @include tablet {
+                margin-left:auto;
+            }
+        }
+        @include tablet {
+            // height: calc(100px + 6rem);
+        }
+        @include mobile {
+            margin-bottom:$size-1;
+        }
+    }
+    &__logo {
+        margin: $size-1 $size-1 $size-5 $size-1;
+        img {
+            width: 200px;
+        }
+        @include mobile {
+            margin-top: -($logoHeight/2)
+        }
+    }
+    &__buttons {
+        width: 200px;
+        margin-left:auto;
+        text-align: center;
+        margin: $size-5 $size-1 $size-1 $size-1;
+        @include tablet {
+            margin-left: auto;
+        }
+        a:hover {
+            color: $yellow !important;
+        }
+    }
     &__box {
         position:relative;
         display: flex;
@@ -43,16 +80,10 @@ $ath: 28rem;
     &__content {
         max-width:340px;
     }
-    &__first {
-        height: calc(100px + 6rem);
-        img {
-            display:block;
-            margin-left:auto;
-        }
-    }
     &__last {
         height: calc(100px + 6rem);
         margin-bottom:1px solid $grey;
+        @extend .is-hidden-mobile;
     }
 }
 

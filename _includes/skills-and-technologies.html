@@ -1,13 +1,14 @@
+{% assign comp = 'skills-and-technologies' %}
 <div class='is-page-number'><span>1</span></div>
-<section id='about-me' class='about-me'>
-    <div class='about-me__box margin-left-1 margin-right-1'>
+<section id='{{comp}}' class='{{comp}}'>
+    <div class='{{comp}}__box margin-left-1 margin-right-1'>
         <h2 class='font-a is-size-2 margin-bottom-1'>Skills and Technologies</h2>
         <div class='columns is-vcentered'>
             <div class='column is-narrow'>
                 <p class='is-marginless'><span class="icon is-large"><i class="fab fa-laravel fa-2x"></i></span></p>
             </div>
             <div class='column'>
-                <div class='about-me__content content font-a is-size-5'>
+                <div class='{{comp}}__content content font-a is-size-5'>
                     <p class='is-marginless'>I build <b>RESTful API's</b> on <b>MVC Frameworks.</b></p>
                 </div>
             </div>
@@ -18,7 +19,7 @@
                 <p class='is-marginless'><span class="icon is-large"><i class="fab fa-vuejs fa-2x"></i></span></p>
             </div>
             <div class='column'>
-                <div class='about-me__content content font-a is-size-5'>
+                <div class='{{comp}}__content content font-a is-size-5'>
                     <p class='is-marginless'>I create <b>Reactive Frontend's.</b></p>
                 </div>
             </div>
@@ -29,7 +30,7 @@
                 <p class='is-marginless'><span class="icon is-large"><i class="fab fa-wordpress fa-2x"></i></span></p>
             </div>
             <div class='column'>
-                <div class='about-me__content content font-a is-size-5'>
+                <div class='{{comp}}__content content font-a is-size-5'>
                     <p class='is-marginless'>I'm a master of <b>WordPress themes and plugins.</b></p>
                 </div>
             </div>
@@ -39,36 +40,36 @@
 
         <div class='columns'>
             <div class='column is-4'>
-                <div class='about-me__content content font-b is-size-6'>
-                    <h2 class='is-size-5'>Frontend</h2>
+                <div class='{{comp}}__content content font-b is-size-6'>
+                    <h2 class='h2'>Frontend</h2>
                     <ul>
-                        <li>HTML5</li>
-                        <li>Vue JS / jQuery</li>
                         <li>Javascript ES6</li>
-                        <li>CSS3 / SCSS / Bulma</li>
+                        <li>Vue.js / jQuery</li>
                         <li>NPM / <u title="Amateur">Webpack</u></li>
+                        <li>HTML5</li>
+                        <li>CSS3 / SCSS / Bulma</li>
                     </ul>
                 </div>
             </div>
             <div class='column is-4'>
-                <div class='about-me__content content font-b is-size-6'>
-                    <h2 class='is-size-5'>Backend</h2>
+                <div class='{{comp}}__content content font-b is-size-6'>
+                    <h2 class='h2'>Backend</h2>
                     <ul>
-                        <li>MySQL</li>
-                        <li>PHP5 / Python</li>
+                        <li>PHP7 / Python</li>
                         <li>Laravel / Code Igniter</li>
-                        <li>Composer</li>
                         <li><u title="Amateur">Docker</u> / AWS</li>
+                        <li>MySQL</li>
+                        <li>Composer</li>
                     </ul>
                 </div>
             </div>
             <div class='column is-4'>
-                <div class='about-me__content content font-b is-size-6'>
-                    <h2 class='is-size-5'>Everything Else</h2>
+                <div class='{{comp}}__content content font-b is-size-6'>
+                    <h2 class='h2'>Everything Else</h2>
                     <ul>
                         <li>GIT / BitBucket</li>
-                        <li>MailChimp / Campaign Monitor</li>
                         <li><u title="This sites built with Jekyll :)">Jekyll</u> Static Site Generation</li>
+                        <li>MailChimp / Campaign Monitor</li>
                         <li>Mac / Windows / Elementry</li>
                         <li>Sublime / Slack / Todoist</li>
                         <li>Microsoft Office / Adobe Suite</li>

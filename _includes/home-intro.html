@@ -1,25 +1,30 @@
 <section class='home-intro'>
     <div class='home-intro__first'>
-        <div class='margin-right-1 margin-top-1 has-text-right'><img src='assets/images/logo.svg' style='width: 200px;'/></div>
+        <div class='home-intro__logo'><img src='assets/images/logo.svg'/></div>
+        <div class="home-intro__buttons buttons">
+            <a class='has-text-grey-darker' href="https://linkedin.com/in/gareth-somers/"><span class="icon is-large"><i class="fab fa-linkedin fa-lg"></i></span></a><!--
+         --><a class='has-text-grey-darker' href="https://www.instagram.com/thatch.house"><span class="icon is-large"><i class="fab fa-instagram fa-lg"></i></span></a><!--
+         --><a class='has-text-grey-darker' href="https://bitbucket.org/garethsomers"><span class="icon is-large"><i class="fab fa-bitbucket fa-lg"></i></span></a><!--
+         --><a class='has-text-grey-darker' href="https://www.facebook.com/thatchdothouse"><span class="icon is-large"><i class="fab fa-facebook fa-lg"></i></span></a></p>
+        </div>
     </div>
-    <div class='home-intro__box margin-left-1'>
+    <div class='home-intro__box margin-left-1 margin-right-1'>
         <h1 class="font-a margin-bottom-3">Hello,<br />I'm Gareth</h1>
         <div class='columns margin-bottom-1'>
             <div class='column' style='max-width:400px'>
                 <div class='about-me__content content font-a is-size-5'>
-                    <p>I'm a web developer from <b>Melbourne, Australia</b> where I have worked in industry for 6 years.</p>
+                    <p>I'm a web developer from <b>Melbourne, Australia</b> where I have worked in professionally for 6 years.</p>
                 </div>
             </div>
             <div class='column' style='max-width:400px'>
                 <div class='about-me__content content font-a is-size-5'>
-                    <p>I'm now travelling to <b>Ireland and the United Kingdom to work</b> and absorb different surroundings.</p>
+                    <p>I'm now travelling <b>Ireland and the United Kingdom to work</b> and absorb different surroundings.</p>
                 </div>
             </div>
         </div>
         <div class='buttons'>
-            <a href='#about-me' class='button'>Skills and Technology</a>
-            <a href='#experience' class='button'>Experience</a>
-            <a href='#find-out-more' class='button'>Find Out More</a>
+            <a onclick='try { document.querySelector(event.target.attributes.href.value).scrollIntoView({ behavior: "smooth" }); event.preventDefault(); } catch (e) {}' href='#skills-and-technologies' class='button is-primary'>Skills and Technology</a>
+            <a onclick='try { document.querySelector(event.target.attributes.href.value).scrollIntoView({ behavior: "smooth" }); event.preventDefault(); } catch (e) {}' href='#find-out-more' class='button is-warning'>Find Out More</a>
         </div>
     </div>
     <div class='home-intro__last'></div>

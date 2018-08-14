@@ -1,17 +1,39 @@
 .page
 {
-    &__left {
-        position:relative;
-        > div {
-            height:100vh;
-            background-image: url('../images/hero.jpg');
-            background-size: cover;
-            background-position: center center;
+    @include mobile {
+        &__left {
+            position:relative;
+            z-index:-1;
+            > div {
+                height: $logoHeight;
+                background-image: url('../images/hero.jpg');
+                background-size: cover;
+                background-position: center center;
+            }
         }
     }
-    &__right {
-        z-index:5;
-        max-height:100vh;
-        overflow-y:scroll;
+    @include tablet {
+        &__left {
+            position:relative;
+            > div {
+                height:100vh;
+                background-image: url('../images/hero.jpg');
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+        &__right {
+            z-index:5;
+            max-height:100vh;
+            overflow-y:scroll;
+            overflow-x:hidden;
+        }
+    }
+}
+
+@include tablet {
+    html {
+        // Hide main scrollbar
+        overflow: -moz-scrollbars-none;
     }
 }

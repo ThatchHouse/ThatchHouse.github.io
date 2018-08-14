@@ -10,4 +10,9 @@
     &__form {
         max-width:500px;
     }
+    &__buttons {
+        a:hover {
+            color: $yellow !important;
+        }
+    }
 }

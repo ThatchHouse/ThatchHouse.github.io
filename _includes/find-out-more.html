@@ -1,38 +1,46 @@
+{% assign comp = 'find-out-more' %}
 <div class='is-page-number'><span>2</span></div>
-<section id='find-out-more' class='about-me'>
-    <div class='find-out-more__box margin-left-1 margin-right-1'>
+<section id='{{comp}}' class='{{comp}}'>
+    <div class='{{comp}}__box margin-left-1 margin-right-1'>
         <h1 class="font-a margin-bottom-3 is-size-1">Find out more</h1>
-        <div class='columns'>
-            <div class='column is-narrow'>
-                <div class='find-out-more__content content font-b'>
-                    <p><b>Looking to employ me?</b></p>
-                    <p>I'm looking for remote work in the primarily in the UK and Ireland.</p>
-                </div>
+        <div class='columns is-multiline'>
+            <div class='column is-12-tablet is-6-desktop is-6-widescreen margin-right-3'>
+                <section>
+                    <div class='{{comp}}__form'>
+                        <h2 class='h2'>Contact me</h2>
+                        <div class='box'>
+                            <form action="https://formspree.io/garethsomers3@gmail.com" method="POST">
+                                <div class='field'>
+                                    <label class='label'>Your Email</label>
+                                    <input type="email" name="_replyto" class='input' required placeholder='legend@acme.com'>
+                                </div>
+                                <div class='field'>
+                                    <label class='label'>Message</label>
+                                    <textarea type="text" name="name" class='textarea' required placeholder='Write a message...'></textarea>
+                                </div>
+                                <div class='buttons is-right'>
+                                    <input type="submit" value="Send" class='button is-primary'>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
             </div>
             <div class='column is-narrow'>
-                <div class='find-out-more__content content font-b'>
-                    <p><b>Looking to hire me?</b></p>
-                    <p>I'm always looking for freelance opportunities.</p>
+                <div class='{{comp}}__content content font-b'>
+                    <h2 class='h2'>Looking to hire me?</h2>
+                    <p>I'm looking to be employed in <b>Aberystwyth</b>, Wales and <b>remotely</b> across Ireland and the United Kingdom.</p>
+                    <p>I'm also available for freelancing.</p>
                 </div>
+                <hr class=''/>
+                <div class="{{comp}}__buttons buttons">
+                    <a class='has-text-grey-dark' href="https://linkedin.com/in/gareth-somers/"><span class="icon is-large"><i class="fab fa-linkedin fa-2x"></i></span></a><!--
+                 --><a class='has-text-grey-dark' href="https://www.instagram.com/thatch.house"><span class="icon is-large"><i class="fab fa-instagram fa-2x"></i></span></a><!--
+                 --><a class='has-text-grey-dark' href="https://bitbucket.org/garethsomers"><span class="icon is-large"><i class="fab fa-bitbucket fa-2x"></i></span></a><!--
+                 --><a class='has-text-grey-dark' href="https://www.facebook.com/thatchdothouse"><span class="icon is-large"><i class="fab fa-facebook fa-2x"></i></span></a></p>
+                </div>
+                <hr class='is-hidden-tablet'/>
             </div>
-        </div>
-
-        <div class="buttons">
-            <a href="https://www.facebook.com/thatchdothouse"><span class="icon is-large"><i class="fab fa-facebook fa-2x"></i></span></a><!--
-         --><a href="https://www.instagram.com/thatch.house"><span class="icon is-large"><i class="fab fa-instagram fa-2x"></i></span></a><!--
-         --><a href="https://bitbucket.org/garethsomers"><span class="icon is-large"><i class="fab fa-bitbucket fa-2x"></i></span></a><!--
-         --><a href="https://linkedin.com/in/gareth-somers/"><span class="icon is-large"><i class="fab fa-linkedin fa-2x"></i></span></a></p>
-        </div>
-
-        <div class='find-out-more__form'>
-            <a name="form234978168" id="formAnchor234978168"></a>
-            <script type="text/javascript" src="https://fs2.formsite.com/include/form/embedManager.js?234978168"></script>
-            <script type="text/javascript">
-            EmbedManager.embed({
-                key: "https://fs2.formsite.com/res/showFormEmbed?EParam=m%2FOmK8apOTDoN6Kn1oTpXdt7h1SghSJ6&234978168",
-                width: "100%"
-            });
-            </script>
         </div>
     </div>
 </section>

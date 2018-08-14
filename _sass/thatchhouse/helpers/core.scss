@@ -1,0 +1,13 @@
+@include tablet {
+    .is-fullheight
+    {
+        min-height:100vh;
+        > .column {
+            min-height:100vh;
+        }
+    }
+}
+
+hr {
+    margin:3rem 0 !important;
+}
