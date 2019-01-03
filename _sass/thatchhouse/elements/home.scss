@@ -37,7 +37,7 @@ $ath: 28rem;
     &__buttons {
         width: 200px;
         margin-left:auto;
-        text-align: center;
+        justify-content:center;
         margin: $size-5 $size-1 $size-1 $size-1;
         @include tablet {
             margin-left: auto;
