@@ -34,6 +34,6 @@
 @include tablet {
     html {
         // Hide main scrollbar
-        overflow: -moz-scrollbars-none;
+        overflow: hidden;
     }
 }
